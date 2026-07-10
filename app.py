@@ -1,5 +1,9 @@
 print("hello git")
-a=10
-b=0
-c=a/b
-print(c)
+try:
+    a=10
+    b=int(input("enter a number"))
+    c=a/b
+except ZeroDivisionError as e:
+    print("zero division error")
+else:
+    print(c)
